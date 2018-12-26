@@ -28,7 +28,7 @@ Flask 基本形式
 
     替换 flask 默认的 Werkzeug 中 stat 重载器
 
-    -   `pipenv install watchdog --dev` 安装该包
+    -   `pipenv install watchdog --dev`   安装该包
 
     pipenv 中使用 `--dev` 表示将该依赖声明为开发依赖，在 pipfile 中会被添加到 dev-packages 中
 
