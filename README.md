@@ -8,10 +8,6 @@ Learning record for FlaskWeb
 
 > hello
 
-1. `pipenv`
+[第 1 章：hello 练习汇总](hello/README.md)
 
-    - 管理项目虚拟环境
-
-2. `python-dotenv`
-
-    - 管理 Flask 项目环境变量的配置
+# 第 2 章
