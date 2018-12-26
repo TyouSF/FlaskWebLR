@@ -32,10 +32,10 @@ Flask 基本形式
 
     pipenv 中使用 `--dev` 表示将该依赖声明为开发依赖，在 pipfile 中会被添加到 dev-packages 中
 
-    如果需要在创建运行环境时，一并安装开发依赖的库，可是在创建环境的命令中添加 ‘--dev’ 参数，即 `pipenv install --dev`
+    如果需要在创建运行环境时，一并安装开发依赖的库，可以在创建环境的命令中添加 '--dev' 参数，即 `pipenv install --dev`
 
 4.  `flask shell` 启动 python shell
 
     使用 flask shell 来启动 python shell，而不直接启动单独的 python shell 环境
 
-    flask shell 启动的交互式环境中，会 **自动包含 flask 程序上下文** 环境，且 flask app 的实例也会被直接导入，方便直接使用
+    flask shell 启动的交互式环境中，会**自动包含 flask 程序上下文**环境，且 flask app 的实例也会被直接导入，方便直接使用
