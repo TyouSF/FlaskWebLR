@@ -30,7 +30,7 @@ Flask 基本形式
 
     -   `pipenv install watchdog --dev`   安装该包
 
-    pipenv 中使用 `--dev` 表示将该依赖声明为开发依赖，在 pipfile 中会被添加到 dev-packages 中
+    pipenv 中使用 `--dev` 表示将该依赖声明为开发依赖，在 pipfile 中会被添加到 dev-packages 中
 
     如果需要在创建运行环境时，一并安装开发依赖的库，可是在创建环境的命令中添加 ‘--dev’ 参数，即 `pipenv install --dev`
 
