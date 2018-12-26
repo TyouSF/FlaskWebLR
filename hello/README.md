@@ -26,7 +26,7 @@ Flask 基本形式
 
 3.  `watchdog` 监控文件变动
 
-    替换 flask 默认的 Werkzeug 中 stat 重载器
+    替换 'flask' 默认的 Werkzeug 中 stat 重载器
 
     -   `pipenv install watchdog --dev`   安装该包
 
