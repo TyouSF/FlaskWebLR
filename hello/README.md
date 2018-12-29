@@ -39,3 +39,15 @@ Flask 基本形式
     使用 flask shell 来启动 python shell，而不直接启动单独的 python shell 环境
 
     flask shell 启动的交互式环境中，会**自动包含 flask 程序上下文**环境，且 flask app 的实例也会被直接导入，方便直接使用
+
+* * *
+
+# hello 练习注解
+
+> 最小 flask 的练习
+>
+> 多个 URL 绑定一个视图函数
+>
+> URL 中变量的定义与使用，包含默认变量的设定
+>
+> flask 中自定义诸如 'flask run' 类似的终端命令
