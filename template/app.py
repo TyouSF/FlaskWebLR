@@ -41,26 +41,27 @@ def index():
     return render_template('index.html')
 
 
-# register template context handler
+# 注册模版上下文处理函数
+# render_template 渲染模版时执行，任意模版均可调用该上下文处理函数的返回值
 @app.context_processor
 def inject_info():
     foo = 'I am foo.'
     return dict(foo=foo)  # equal to: return {'foo': foo}
 
 
-# register template global function
+# 自定义模版全局函数
 @app.template_global()
 def bar():
     return 'I am bar.'
 
 
-# reigster template filter
+# 自定义模版过滤器
 @app.template_filter()
 def musical(s):
     return s + Markup(' &#9835;')
 
 
-# register template test
+# 注册模版过测试器（或校验方法，返回值为 True/False）
 @app.template_test()
 def baz(n):
     if n == 'baz':
@@ -73,14 +74,14 @@ def watchlist_with_static():
     return render_template('watchlist_with_static.html', user=user, movies=movies)
 
 
-# message flashing
+# flash 闪现消息
 @app.route('/flash')
 def just_flash():
     flash('I am flash, who is looking for me?')
     return redirect(url_for('index'))
 
 
-# 404 error handler
+# 错误处理器
 @app.errorhandler(404)
 def page_not_found(e):
     return render_template('errors/404.html'), 404
