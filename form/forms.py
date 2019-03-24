@@ -10,7 +10,7 @@ from wtforms import StringField, PasswordField, BooleanField, IntegerField, \
 from wtforms.validators import DataRequired, Length, ValidationError, Email
 
 
-# 4.3.1 basic form example
+# 4.3.1 basic form 表单示例类
 class LoginForm(FlaskForm):
     username = StringField('Username', validators=[DataRequired()])
     password = PasswordField('Password', validators=[
@@ -19,7 +19,7 @@ class LoginForm(FlaskForm):
     submit = SubmitField('Log in')
 
 
-# custom validator
+# custom validator 自定义行内验证器
 class FortyTwoForm(FlaskForm):
     answer = IntegerField('The Number')
     submit = SubmitField()
@@ -29,20 +29,20 @@ class FortyTwoForm(FlaskForm):
             raise ValidationError('Must be 42.')
 
 
-# upload form
+# upload form 文件上传表单类示例
 class UploadForm(FlaskForm):
     photo = FileField('Upload Image', validators=[
                       FileRequired(), FileAllowed(['jpg', 'jpeg', 'png', 'gif'])])
     submit = SubmitField()
 
 
-# multiple files upload form
+# multiple files upload form 多文件上传表单类示例
 class MultiUploadForm(FlaskForm):
     photo = MultipleFileField('Upload Image', validators=[DataRequired()])
     submit = SubmitField()
 
 
-# multiple submit button
+# multiple submit button 多提交按钮表单类示例
 class NewPostForm(FlaskForm):
     title = StringField('Title', validators=[DataRequired(), Length(1, 50)])
     body = TextAreaField('Body', validators=[DataRequired()])
