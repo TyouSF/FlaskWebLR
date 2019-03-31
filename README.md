@@ -38,4 +38,4 @@ Learning record for FlaskWeb
 
 > Mail
 
-[第 6 章：Flask Mail 的发送与使用](emial/README.md)
+[第 6 章：Flask Mail 的发送与使用](email/README.md)
