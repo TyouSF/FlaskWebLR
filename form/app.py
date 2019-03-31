@@ -31,12 +31,15 @@ app.config['ALLOWED_EXTENSIONS'] = ['png', 'jpg', 'jpeg', 'gif']
 app.config['CKEDITOR_SERVE_LOCAL'] = True
 app.config['CKEDITOR_FILE_UPLOADER'] = 'upload_for_ckeditor'
 
-# Flask-Dropzone config
+# Flask-Dropzone config 多文件上传插件配置
 app.config['DROPZONE_ALLOWED_FILE_TYPE'] = 'image'
 app.config['DROPZONE_MAX_FILE_SIZE'] = 3
 app.config['DROPZONE_MAX_FILES'] = 30
 
+# 实例化 ckeditor 编辑器
 ckeditor = CKEditor(app)
+
+# 实例化 dropzone
 dropzone = Dropzone(app)
 
 

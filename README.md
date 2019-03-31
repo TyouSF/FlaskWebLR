@@ -21,3 +21,15 @@ Learning record for FlaskWeb
 > templates
 
 [第 3 章：Flask 的模板](template/README.md)
+
+> form
+
+[第 4 章：Flask 的表单](form/README.md)
+
+> database
+
+[第 5 章：FLask 数据库范例](database/README.md)
+
+> Mail
+
+[第 6 章：Flask Mail 的发送与使用](emial/README.md)
