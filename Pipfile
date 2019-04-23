@@ -20,6 +20,7 @@ faker = "*"
 flask-debugtoolbar = "*"
 flask-mail = "*"
 sendgrid-python = "*"
+jinja2 = "*"
 
 [requires]
 python_version = "3.7"
